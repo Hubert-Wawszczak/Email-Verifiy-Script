@@ -16,7 +16,7 @@ class Logger():
             self.logger.removeHandler(hdlr)
 
     def log_message(self, message, flag = 1):
-        """Append message to log file 
+        """log message
         Args:
             message (string): Message to save 
         """   
