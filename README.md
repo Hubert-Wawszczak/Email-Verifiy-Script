@@ -2,9 +2,9 @@
 Recruitment-task for profil-software.com
 
 # Requirements
-Python>=3.10
-pandas==1.4.3
-numpy==1.23.1
+Python>=3.10  
+pandas==1.4.3  
+numpy==1.23.1  
 
 # How use
 
