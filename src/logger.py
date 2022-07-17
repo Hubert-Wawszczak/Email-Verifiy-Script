@@ -1,25 +1,27 @@
 
-from dataclasses import dataclass
 import logging
 
 
-# ToDo add creating dir checker
 class Logger():
+    
+    
     def __init__(self):
         logging.basicConfig(format='%(asctime)s; %(levelname)s: %(message)s',
                             datefmt='%Y-%m-%d; %H:%M:%S',
                             level=logging.DEBUG)
         self.logger = logging.getLogger()
-        
+
+
     def close_logger(self):
         for hdlr in self.logger.handlers[:]:
             self.logger.removeHandler(hdlr)
 
-    def log_message(self, message, flag = 1):
+
+    def log_message(self, message, flag=1):
         """log message
         Args:
-            message (string): Message to save 
-        """   
+            message (string): Message to save
+        """
         message = message + ";"
         if flag == 1:
             self.logger.info(message)
@@ -31,6 +33,3 @@ class Logger():
             self.logger.critical(message)
         if flag == 5:
             self.logger.exception(message)
-    
-    
-           
