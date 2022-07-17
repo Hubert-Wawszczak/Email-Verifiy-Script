@@ -1,7 +1,7 @@
 # Recruitment-task---backend-internship
 Recruitment-task for profil-software.com
 
-#Author Hubert Wawszczak
+# Author Hubert Wawszczak
 
 # Requirements
 Python>=3.10  
